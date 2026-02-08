@@ -1,33 +1,38 @@
-# Virtual environment
+# ============================================
+# Project Blue Nexus — .gitignore
+# ============================================
+
+# ----- Python -----
 ocean_env/
 venv/
 .venv/
-
-# Cached data files (large, re-downloadable from NOAA)
-data/*.nc
-*.nc
-
-# Jupyter checkpoints
-.ipynb_checkpoints/
-
-# Python bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.egg-info/
+dist/
+build/
 
-# OS files
+# ----- Jupyter -----
+.ipynb_checkpoints/
+
+# ----- Data (large, re-downloadable from NOAA) -----
+data/*.nc
+*.nc
+
+# ----- Internal / non-public files -----
+Blue_Nexus_System_Reference.docx
+setup_repo.py
+bluenexus_treeoutput.txt
+
+# ----- OS junk -----
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# IDE
+# ----- IDE -----
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# Distribution
-dist/
-build/
-*.egg-info/
