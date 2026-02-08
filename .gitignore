@@ -1,0 +1,33 @@
+# Virtual environment
+ocean_env/
+venv/
+.venv/
+
+# Cached data files (large, re-downloadable from NOAA)
+data/*.nc
+*.nc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution
+dist/
+build/
+*.egg-info/
