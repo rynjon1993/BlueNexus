@@ -17,13 +17,14 @@ build/
 # ----- Jupyter -----
 .ipynb_checkpoints/
 
-# ----- Data (large, re-downloadable from NOAA) -----
+# ----- Data (large NetCDF files, re-downloadable from NOAA) -----
 data/*.nc
-*.nc
 
-# ----- Internal / non-public files -----
+# ----- Internal project management (not for public repo) -----
 Blue_Nexus_System_Reference.docx
 setup_repo.py
+cleanup_repo.py
+restructure_repo.py
 bluenexus_treeoutput.txt
 
 # ----- OS junk -----
