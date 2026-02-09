@@ -1,0 +1,33 @@
+# Cache directory (SQLite database and logs)
+cache/
+*.db
+*.db-journal
+*.log
+fetch_log.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+env/
+venv/
+ENV/
+ocean_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+temp_*.nc
+*.tmp
