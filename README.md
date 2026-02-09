@@ -21,7 +21,7 @@ All projects share a common data cache and Python environment, and each one buil
 | # | Project | Description | Status |
 |---|---------|-------------|--------|
 | 01 | [**Lake Erie SST Analysis**](01_lake_erie_sst/) | Surface temperature pipeline, seasonal dynamics, multi-year comparison, basin-scale physics, and SST–chlorophyll bloom correlation | ✅ Complete |
-| 02 | **Lake Erie HAB Deep-Dive** | Harmful algal bloom prediction, nutrient loading analysis, bloom severity index | 🔜 Planned |
+| 02 | [**Lake Erie HAB Deep-Dive**](02_lake_erie_hab/) | Temporal SST–chlorophyll correlation, lag analysis, multi-year bloom severity scorecard (2019–2023), monthly spatial progression | ✅ Complete |
 | 03 | **Real-Time Monitoring Dashboard** | Automated data fetching, live visualization, alert thresholds | 🔜 Planned |
 | 04 | **CTD Profile Analysis** | Vertical water column profiles, T-S diagrams, stratification detection | 🔜 Planned |
 | 05 | **Great Lakes Current Visualization** | OSCAR/GlobCurrent vector fields, transport pathways | 🔜 Planned |
@@ -78,7 +78,8 @@ BlueNexus/
 ├── data/                               ← Shared data cache (gitignored — auto-downloaded)
 │   ├── lake_erie_sst_2023_*.nc
 │   ├── lake_erie_sst_20XX_jul_aug.nc
-│   └── lake_erie_chl_2023_aug15.nc
+│   ├── lake_erie_chl_2023_*.nc
+│   └── lake_erie_chl_20XX_jul_aug.nc
 │
 ├── 01_lake_erie_sst/                   ← Project 01: SST Analysis
 │   ├── README.md
@@ -87,7 +88,13 @@ BlueNexus/
 │       ├── lake_erie_sst_peak_2023.png
 │       └── ...
 │
-├── 02_lake_erie_hab/                   ← Project 02 (future)
+├── 02_lake_erie_hab/                   ← Project 02: HAB Deep-Dive
+│   ├── README.md
+│   ├── 02_Lake_Erie_HAB_Analysis.ipynb
+│   └── output/                         ← Generated visualizations
+│       ├── hab_sst_chl_timeseries_2023.png
+│       └── ...
+│
 ├── 03_realtime_monitor/                ← Project 03 (future)
 └── ...
 ```
@@ -125,9 +132,10 @@ All data is in the public domain, provided by [NOAA Great Lakes Environmental Re
 - [x] **Phase 2:** Multi-year comparison, basin dynamics, temperature anomaly analysis
 - [x] **Phase 3:** Chlorophyll-a integration, SST–bloom spatial correlation
 - [x] **Phase 4:** Portfolio polish, GitHub publication, scalable repo structure
-- [ ] **Phase 5:** Real-time monitoring dashboard, automated data fetching
-- [ ] **Phase 6:** CTD profile analysis, ocean current visualization
-- [ ] **Phase 7:** AI-assisted report generation, RAG pipeline for research papers
+- [x] **Phase 5:** HAB deep-dive, temporal correlation, multi-year bloom analysis, monthly progression maps
+- [ ] **Phase 6:** Real-time monitoring dashboard, automated data fetching
+- [ ] **Phase 7:** CTD profile analysis, ocean current visualization
+- [ ] **Phase 8:** AI-assisted report generation, RAG pipeline for research papers
 
 ---
 
