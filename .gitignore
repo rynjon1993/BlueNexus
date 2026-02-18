@@ -32,8 +32,18 @@ bluenexus_treeoutput.txt
 Thumbs.db
 desktop.ini
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # ----- IDE -----
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Temporary files
+temp_*.nc
+*.tmp
