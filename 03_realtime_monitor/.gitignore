@@ -1,22 +1,18 @@
-# Cache directory (SQLite database and logs)
+# Data files (regenerated at runtime)
 cache/
 *.db
-*.db-journal
-*.log
-fetch_log.txt
+*.db-wal
+*.db-shm
+temp_*.nc
+archive_progress.json
 
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-
-# Virtual environment
-env/
+*.pyc
+*.pyo
+.venv/
 venv/
-ENV/
-ocean_env/
+env/
 
 # IDE
 .vscode/
@@ -27,7 +23,4 @@ ocean_env/
 # OS
 .DS_Store
 Thumbs.db
-
-# Temporary files
-temp_*.nc
-*.tmp
+Desktop.ini
